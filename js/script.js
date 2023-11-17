@@ -14,13 +14,13 @@ const callH1 = document.querySelector('h1');
 
 const listaSpesa= [' 100kg bistecche', ' 100 birre', ' 100g di sale', '50 arance', '50kg riso', '50kg di kiwi'];
 
-let prodotto = 0;
+const prodotto = [];
 
 let i = 0;
 
 while(i<listaSpesa.length){
   
-   prodotto = listaSpesa[i];
+   prodotto.push (listaSpesa[i]);
    console.log(i,prodotto);
    i++
    
