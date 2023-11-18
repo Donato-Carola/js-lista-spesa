@@ -20,6 +20,8 @@ const listaSpesa= [' 100kg bistecche', ' 100 birre', ' 100g di sale', '50 arance
 
 //const prodotto = [];
 
+///! Creazione dell'esercizio con il while//
+
 let i = 0;
 
 while(i<listaSpesa.length){
@@ -40,3 +42,14 @@ while(i<listaSpesa.length){
 //console.log(i,prodotto)
 //callDiv.innerHTML=`${prodotto}`
 //callLi.innerHTML=`${listaSpesa[i]}`
+
+//! Creazione dell'esercizio con il FOR//
+
+for (let i=0; i<listaSpesa.length;i++){
+   const callLi=document.createElement('li');
+   ul.appendChild(callLi)
+   callLi.innerHTML=`${listaSpesa[i]}`
+   
+  
+   console.log(i,callLi);
+}
