@@ -9,25 +9,27 @@ body.appendChild(elementDiv);
 
 const callDiv = document.querySelector('div')
 
-/*const ul = document.createElement('ul');
+const ul = document.createElement('ul');
 elementDiv.appendChild(ul);
 
-const CallLi=document.createElement('li');
-ul.appendChild(CallLi)
 
-const callLi = document.querySelector('li');*/
+
+const callLi = document.querySelector('li');
 
 const listaSpesa= [' 100kg bistecche', ' 100 birre', ' 100g di sale', '50 arance', '50kg riso', '50kg di kiwi'];
 
-const prodotto = [];
+//const prodotto = [];
 
 let i = 0;
 
 while(i<listaSpesa.length){
+
+   const callLi=document.createElement('li');
+   ul.appendChild(callLi)
+   callLi.innerHTML=`${listaSpesa[i]}`
+   
   
-   prodotto.push (listaSpesa[i]);
-  
-   console.log(i,prodotto);
+   console.log(i,callLi);
    i++
    //CallLi.innerHTML=`${prodotto}`;
 
@@ -36,4 +38,5 @@ while(i<listaSpesa.length){
 }
 
 //console.log(i,prodotto)
-callDiv.innerHTML=`${prodotto}`
+//callDiv.innerHTML=`${prodotto}`
+//callLi.innerHTML=`${listaSpesa[i]}`
